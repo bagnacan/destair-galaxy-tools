@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 dir=$(cd $(dirname $0) && pwd)
-ln -s $dir $GALAXY_ROOT/tools/$(basename $dir)
-ln -s $dir $GALAXY_ROOT/test-data/$(basename $dir)
+ln -sfn $dir $GALAXY_ROOT/tools/$(basename $dir)
+ln -sfn $dir $GALAXY_ROOT/test-data/$(basename $dir)
 
 planemo test --galaxy_root=$GALAXY_ROOT
 if [[ $? -gt 0 ]]; then	
