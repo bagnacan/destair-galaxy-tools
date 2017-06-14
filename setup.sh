@@ -1,10 +1,17 @@
 #! /usr/bin/env bash
+
 dir=$(cd $(dirname $0) && pwd)
-ln -sfn $dir $GALAXY_ROOT/tools/$(basename $dir)
-ln -sfn $dir $GALAXY_ROOT/test-data/$(basename $dir)
+for i in $(ls -d $dir/*/); do
+	ln -sfn $dir $GALAXY_ROOT/tools/$(basename $i)
+	ln -sfn $dir $GALAXY_ROOT/test-data/$(basename $i)
+done
+
+# source $GALAXY_ROOT/.venv/bin/activate
+# deactivate
 
 planemo test --galaxy_root=$GALAXY_ROOT
 if [[ $? -gt 0 ]]; then	
+	echo "test failed"
 	exit
 fi
 echo
