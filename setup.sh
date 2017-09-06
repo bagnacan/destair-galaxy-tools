@@ -6,15 +6,8 @@ for i in $(ls -d $dir/*/); do
 	ln -sfn $dir $GALAXY_ROOT/test-data/$(basename $i)
 done
 
-# source $GALAXY_ROOT/.venv/bin/activate
-# deactivate
-
-planemo test --galaxy_root=$GALAXY_ROOT
-if [[ $? -gt 0 ]]; then	
-	echo "test failed"
-	exit
-fi
-echo
-echo "test successful - server will start in 5 seconds"
-sleep 5
+source $GALAXY_ROOT/.venv/bin/activate
+pip install planemo bioblend
+#planemo test --galaxy_root=$GALAXY_ROOT
 planemo serve --galaxy_root=$GALAXY_ROOT
+deactivate
