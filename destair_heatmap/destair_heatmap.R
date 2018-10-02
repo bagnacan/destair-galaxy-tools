@@ -33,6 +33,6 @@ ids <- ddsrNoNAp05$X[1:topx]
 pdf(output)
 hmcol <- colorRampPalette(brewer.pal(9, "GnBu"))(100)
 m <- c(2,floor(max(nchar(as.character(ids)))/2.5))
-heatmap.2(cbind(countx,county), col = hmcol, Rowv = TRUE, Colv = FALSE, scale = "none", dendrogram = "row", trace = "none", srtCol=0, labCol = c("A","A*"), margin=m, labRow = ids, cexRow = 0.6, cexCol = 1, key.title = NA, key.ylab = NA, key.xlab = "log2 normalized counts")
+heatmap.2(cbind(countx,county), col = hmcol, Rowv = TRUE, Colv = FALSE, scale = "none", dendrogram = "row", trace = "none", srtCol=0, labCol = c("Experiment 1","Experiment 2"), margin=m, labRow = ids, cexRow = 0.6, cexCol = 1, key.title = NA, key.ylab = NA, key.xlab = "log2 normalized counts")
 #, distfun=function(x) as.dist(1-cor(t(x))), hclustfun=function(x) hclust(x, method="average"))
 graphics.off()
