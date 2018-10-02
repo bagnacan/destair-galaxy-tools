@@ -1,0 +1,34 @@
+<tool id="destair_heatmap" name="destair heatmap" version="0.0.1">
+    <requirements>
+		<requirement type="package" version="3.0.1">r-gplots</requirement>
+		<requirement type="package" version="3.0.0">r-ggplot2</requirement>
+		<requirement type="package" version="1.1_2">r-rcolorbrewer</requirement>
+    </requirements>
+    <stdio>
+        <exit_code range="1:" />
+    </stdio>
+    <command><![CDATA[
+        Rscript $__tool_directory__/destair_heatmap.R "$input_csv" "$input_topx" "$output_pdf"
+    ]]></command>
+    <inputs>
+        <param type="data" name="input_csv" format="csv" label="DESeq2 results table" />
+		<param type="integer" name="input_topx" value="50" label="Top X diff. expr. genes to be visualized" />
+    </inputs>
+    <outputs>
+        <data name="output_pdf" format="pdf" label="Heatmap"/>
+    </outputs>
+    <tests>
+        <test>
+            <param name="input_csv" value="destair_heatmap/destair_heatmap.csv" />
+			<param name="input_topx" value="50" />
+            <output name="output_pdf" file="destair_heatmap/destair_heatmap.pdf" />
+        </test>
+    </tests>
+    <help><![CDATA[
+        
+destair_heatmap.R - generate heatmap for top X differentially expressed genes\n
+usage:\n
+destair_heatmap.R <INFILE> <OUTFILE> <X>
+
+    ]]></help>
+</tool>
