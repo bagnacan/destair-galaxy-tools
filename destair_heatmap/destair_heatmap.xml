@@ -1,7 +1,6 @@
 <tool id="destair_heatmap" name="destair heatmap" version="0.0.1">
     <requirements>
 		<requirement type="package" version="3.0.1">r-gplots</requirement>
-		<requirement type="package" version="3.0.0">r-ggplot2</requirement>
 		<requirement type="package" version="1.1_2">r-rcolorbrewer</requirement>
     </requirements>
     <stdio>
@@ -25,10 +24,18 @@
         </test>
     </tests>
     <help><![CDATA[
-        
-destair_heatmap.R - generate heatmap for top X differentially expressed genes\n
-usage:\n
-destair_heatmap.R <INFILE> <OUTFILE> <X>
+Description:
 
+Generate a heatmap for top X differentially expressed genes from a DESeq2 result table
+
+Synopsis:
+
+destair_heatmap.R <INFILE> <X> <OUTFILE>
+
+Options:
+
+INFILE  : DESeq2_results.csv
+X       : Number of top differntially expressed genes to be displayed (default: 50)
+OUTFILE : heatmap.pdf
     ]]></help>
 </tool>
