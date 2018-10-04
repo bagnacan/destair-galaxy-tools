@@ -28,7 +28,7 @@ if [[ $(grep destair_scripts $cfg) ]]; then
 	sto=$(grep -m 1 -n -F '</section' $cfg | cut -d ':' -f 1)
 	sed -i "$sta,$sto{/./d}" $cfg
 fi
-echo '  <section id="deSTAIR_visualization" name="deSTAIR_visualization">' > tmp
+echo '  <section id="destair_visualization" name="de.STAIR Visualization">' > tmp
 for i in $(ls -d $dir/*/); do
 	echo '    <tool file="'$(basename $i)/$(basename $i).xml'" />'
 done >> tmp
