@@ -1,4 +1,4 @@
-<tool id="destair_heatmap" name="destair heatmap" version="0.0.1">
+<tool id="destair_heatmap" name="de.STAIR Heatmap" version="0.0.1">
     <requirements>
 		<requirement type="package" version="3.0.1">r-gplots</requirement>
 		<requirement type="package" version="1.1_2">r-rcolorbrewer</requirement>
@@ -35,7 +35,9 @@ destair_heatmap.R <INFILE> <X> <OUTFILE>
 Options:
 
 INFILE  : DESeq2_results.csv
+
 X       : Number of top differntially expressed genes to be displayed (default: 50)
+
 OUTFILE : heatmap.pdf
     ]]></help>
 </tool>
