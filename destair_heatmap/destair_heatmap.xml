@@ -14,7 +14,7 @@
 		<param type="integer" name="input_topx" value="50" label="Top X diff. expr. genes to be visualized" />
     </inputs>
     <outputs>
-        <data name="output_pdf" format="pdf" label="Heatmap"/>
+        <data name="output_pdf" format="pdf" label="de.STAIR Heatmap"/>
     </outputs>
     <tests>
         <test>

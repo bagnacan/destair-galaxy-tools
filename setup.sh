@@ -24,7 +24,7 @@ cfg=$(ls $GALAXY_ROOT/config/tool_conf.xml 2> /dev/null)
 sample=$GALAXY_ROOT/config/tool_conf.xml.sample
 [[ ! $cfg ]] && cfg=$(dirname $sample)/$(basename $sample .sample) && cp $sample $cfg
 if [[ $(grep destair_scripts $cfg) ]]; then
-	sta=$(grep -m 1 -n -F 'deSTAIR_visualization' $cfg | cut -d ':' -f 1)
+	sta=$(grep -m 1 -n -F 'destair_visualization' $cfg | cut -d ':' -f 1)
 	sto=$(grep -m 1 -n -F '</section' $cfg | cut -d ':' -f 1)
 	sed -i "$sta,$sto{/./d}" $cfg
 fi
