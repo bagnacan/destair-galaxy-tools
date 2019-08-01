@@ -1,6 +1,7 @@
 #! /usr/bin/env bash
 shopt -s extglob
 
+mkdir -p $GALAXY_ROOT/database/dependencies
 echo 'channels: [iuc, bioconda, conda-forge, defaults]' > $GALAXY_ROOT/database/dependencies/_condarc
 
 dir=$(cd $(dirname $0) && pwd)
