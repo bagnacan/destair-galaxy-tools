@@ -16,9 +16,9 @@ sample=$GALAXY_ROOT/config/galaxy.+(yml|ini).sample
 sed -i -r 's/(^\s*)#+(\s*webhooks_dir.+)/\1\2/' $cfg
 sed -i -r 's/(^\s*)#+(\s*tour_config_dir.+)/\1\2/' $cfg
 sed -i -r 's/(^\s*)#+(\s*tool_path.+)/\1\2/' $cfg
-sed -i -r 's/(^\s*)#+(\s*conda_auto_install\s*=).*/\1\2 True/' $cfg
-sed -i -r 's/(^\s*)#+(\s*conda_auto_init\s*=).*/\1\2 True/' $cfg
-sed -i -r 's/(^\s*)#+(\s*conda_ensure_channels\s*=).*/\1\2 iuc,bioconda,conda-forge,defaults/' $cfg
+sed -i -r 's/(^\s*)#+(\s*conda_auto_install\s*[:=]).*/\1\2 true/' $cfg
+sed -i -r 's/(^\s*)#+(\s*conda_auto_init\s*[:=]).*/\1\2 true/' $cfg
+sed -i -r 's/(^\s*)#+(\s*conda_ensure_channels\s*[:=]).*/\1\2 iuc,bioconda,conda-forge,defaults/' $cfg
 
 unset cfg
 cfg=$(ls $GALAXY_ROOT/config/tool_conf.xml 2> /dev/null)
