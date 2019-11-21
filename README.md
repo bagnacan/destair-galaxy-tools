@@ -1,7 +1,6 @@
 <div id="top"></div>
 
-Tools
-=====
+# Tools
 
 This repository contains all de.STAIR Galaxy tools developed for the analysis of RNA-Seq and BS/RRBS-Seq data.  
 Tools can be tested, modified, and contributed by following these instructions:
@@ -11,7 +10,7 @@ Tools can be tested, modified, and contributed by following these instructions:
 - [Run the Galaxy framework](#run-the-galaxy-framework)
 
 
-# Set up the Galaxy environment
+## Set up the Galaxy environment
 
 Create a directory for the Galaxy repository
 ```
@@ -31,7 +30,7 @@ $ git checkout v19.01
 <p align="right"><a href="#top">&#x25B2; back to top</a></p>
 
 
-# Set up the de.STAIR tools
+## Set up the de.STAIR tools
 
 Create a directory for the de.STAIR Galaxy tools repository
 ```
@@ -50,7 +49,7 @@ $ $DESTAIR_GALAXY_TOOLS/setup.sh
 <p align="right"><a href="#top">&#x25B2; back to top</a></p>
 
 
-# Run the Galaxy framework
+## Run the Galaxy framework
 
 Run the Galaxy launch script to verify the Galaxy framework setup and the inclusion of the new tools
 ```
