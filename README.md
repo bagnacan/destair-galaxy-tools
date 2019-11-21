@@ -6,7 +6,7 @@ This repository contains all de.STAIR Galaxy tools developed for the analysis of
 Tools can be tested, modified, and contributed by following these instructions:
 
 - [Set up the Galaxy environment](#set-up-the-galaxy-environment)
-- [Set up the de.STAIR tools](#set-up-the-de-stair-tools)
+- [Set up the de.STAIR tools](#set-up-the-destair-tools)
 - [Run the Galaxy framework](#run-the-galaxy-framework)
 
 
