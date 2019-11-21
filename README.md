@@ -49,7 +49,7 @@ $ git clone https://github.com/destairdenbi/galaxy-tools.git $DESTAIR_GALAXY_TOO
 ```
 
 Set up the de.STAIR tools into the cloned Galaxy repository
-``
+```
 $ $DESTAIR_GALAXY_TOOLS/setup.sh
 ```
 <p align="right"><a href="#top">&#x25B2; back to top</a></p>
