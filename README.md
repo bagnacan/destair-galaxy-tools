@@ -2,15 +2,25 @@
 
 # Tools
 
-This repository contains all de.STAIR Galaxy tools developed for the analysis of RNA-Seq and BS/RRBS-Seq data.  
-Tools can be tested, modified, and contributed by following these instructions:
-
-- [Set up the Galaxy environment](#set-up-the-galaxy-environment)
-- [Set up the de.STAIR tools](#set-up-the-destair-tools)
-- [Run the Galaxy framework](#run-the-galaxy-framework)
+This repository contains all de.STAIR Galaxy tools developed for the analysis
+of RNA-Seq and BS/RRBS-Seq data.  
+The tools are incorporated in the [Galaxy workflow generator](https://github.com/destairdenbi/galaxy-workflow-generator).
 
 
-## Set up the Galaxy environment
+- [How to contribute](#how-to-contribute)
+  - [Set up the Galaxy environment](#set-up-the-galaxy-environment)
+  - [Set up the de.STAIR tools](#set-up-the-destair-tools)
+  - [Run the Galaxy framework](#run-the-galaxy-framework)
+
+
+## How to contribute
+
+Tools can be tested, modified, and extended. The following sections will help
+you setting up the Galaxy framework to contribute to the tools.
+<p align="right"><a href="#top">&#x25B2; back to top</a></p>
+
+
+### Set up the Galaxy environment
 
 Create a directory for the Galaxy repository
 ```
@@ -30,7 +40,7 @@ $ git checkout v19.01
 <p align="right"><a href="#top">&#x25B2; back to top</a></p>
 
 
-## Set up the de.STAIR tools
+### Set up the de.STAIR tools
 
 Create a directory for the de.STAIR Galaxy tools repository
 ```
@@ -49,7 +59,7 @@ $ $DESTAIR_GALAXY_TOOLS/setup.sh
 <p align="right"><a href="#top">&#x25B2; back to top</a></p>
 
 
-## Run the Galaxy framework
+### Run the Galaxy framework
 
 Run the Galaxy launch script to verify the Galaxy framework setup and the inclusion of the new tools
 ```
