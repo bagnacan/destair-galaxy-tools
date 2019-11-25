@@ -2,10 +2,9 @@
 
 # Tools
 
-This repository contains all de.STAIR Galaxy tools developed for the analysis
-of RNA-Seq and BS/RRBS-Seq data.  
-The tools are incorporated in the [Galaxy workflow generator](https://github.com/destairdenbi/galaxy-workflow-generator).
-
+This repository contains the de.STAIR tools that are incorporated in the
+[Galaxy workflow generator](https://github.com/destairdenbi/galaxy-workflow-generator),
+to assist users in the analysis of RNA-Seq and BS/RRBS-Seq data.
 
 - [How to contribute](#how-to-contribute)
   - [Set up the Galaxy environment](#set-up-the-galaxy-environment)
@@ -16,7 +15,7 @@ The tools are incorporated in the [Galaxy workflow generator](https://github.com
 ## How to contribute
 
 Tools can be tested, modified, and extended. The following sections will help
-you setting up the Galaxy framework to contribute to the tools.
+you set up the Galaxy framework to contribute to the tools.
 <p align="right"><a href="#top">&#x25B2; back to top</a></p>
 
 
